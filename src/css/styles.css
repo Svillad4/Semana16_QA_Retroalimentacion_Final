@@ -1,0 +1,88 @@
+:root {
+  --color-primary: #1f5f4a;
+  --color-secondary: #f4b942;
+  --color-bg: #f7faf8;
+  --color-dark: #12352b;
+  --radius-xl: 1.25rem;
+}
+
+body {
+  background: var(--color-bg);
+  color: #1e293b;
+}
+
+.hero {
+  background: linear-gradient(135deg, #113f32, #28765c);
+  color: white;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.brand-pill {
+  display: inline-flex;
+  gap: .5rem;
+  align-items: center;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.25);
+  padding: .5rem .85rem;
+  border-radius: 999px;
+  font-size: .9rem;
+}
+
+.card-soft {
+  border: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .08);
+}
+
+.section-title {
+  color: var(--color-dark);
+  font-weight: 800;
+}
+
+.badge-prioridad-Alta,
+.badge-prioridad-alta {
+  background: #dc3545;
+}
+
+.badge-prioridad-Media,
+.badge-prioridad-media {
+  background: #f59f00;
+}
+
+.badge-prioridad-Baja,
+.badge-prioridad-baja {
+  background: #198754;
+}
+
+.estado-Pendiente { color: #dc3545; font-weight: 700; }
+.estado-En\ revision { color: #f59f00; font-weight: 700; }
+.estado-Corregido { color: #198754; font-weight: 700; }
+
+.table-responsive {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.todo-box {
+  border-left: 6px solid var(--color-secondary);
+  background: #fff8e6;
+  border-radius: .75rem;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+footer {
+  background: #12352b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+}

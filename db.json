@@ -1,0 +1,63 @@
+{
+  "bugs": [
+    {
+      "id": "BUG-001",
+      "titulo": "El formulario permite enviar comentarios muy cortos",
+      "area": "Validacion",
+      "prioridad": "Alta",
+      "estado": "Pendiente",
+      "evidencia": "evidencias/antes/bug-001.png",
+      "correccion": "Agregar regla de longitud minima y mensaje claro al usuario.",
+      "archivo": "src/js/validaciones.js"
+    },
+    {
+      "id": "BUG-002",
+      "titulo": "El boton de eliminar no pide confirmacion",
+      "area": "Usabilidad",
+      "prioridad": "Media",
+      "estado": "Pendiente",
+      "evidencia": "evidencias/antes/bug-002.png",
+      "correccion": "Agregar confirmacion con SweetAlert2 antes de eliminar registros.",
+      "archivo": "src/js/qa.js"
+    },
+    {
+      "id": "BUG-003",
+      "titulo": "Falta evidencia de consola sin errores criticos",
+      "area": "Evidencias",
+      "prioridad": "Media",
+      "estado": "Pendiente",
+      "evidencia": "evidencias/consola/pendiente.png",
+      "correccion": "Tomar captura de consola despues de ejecutar y probar la aplicacion.",
+      "archivo": "evidencias/consola/"
+    }
+  ],
+  "coevaluaciones": [
+    {
+      "id": "COE-001",
+      "revisor": "Equipo par",
+      "proyectoRevisado": "Feria Rural Digital",
+      "fortaleza": "El proyecto tiene estructura clara y usa JSON Server para datos.",
+      "mejora": "Completar mejor el plan de mejora continua y evidencias antes/despues.",
+      "listoExposicion": "En revision"
+    }
+  ],
+  "mejoras": [
+    {
+      "id": "MEJ-001",
+      "titulo": "Agregar exportacion de registros",
+      "prioridad": "Media",
+      "justificacion": "Permitiria generar reportes para la exposicion final.",
+      "implementacion": "Crear una funcion que convierta los registros en CSV."
+    }
+  ],
+  "checklist": [
+    { "id": "CHK-001", "requisito": "El proyecto ejecuta con npm run start", "cumple": false, "evidencia": "" },
+    { "id": "CHK-002", "requisito": "JSON Server funciona en http://localhost:3001", "cumple": false, "evidencia": "" },
+    { "id": "CHK-003", "requisito": "El registro de bugs esta priorizado", "cumple": false, "evidencia": "" },
+    { "id": "CHK-004", "requisito": "Se aplicaron correcciones y se comparo antes/despues", "cumple": false, "evidencia": "" },
+    { "id": "CHK-005", "requisito": "Existe coevaluacion o retroalimentacion de pares", "cumple": false, "evidencia": "" },
+    { "id": "CHK-006", "requisito": "El plan de mejora esta justificado", "cumple": false, "evidencia": "" },
+    { "id": "CHK-007", "requisito": "La consola no muestra errores criticos", "cumple": false, "evidencia": "" },
+    { "id": "CHK-008", "requisito": "El proyecto esta listo para exposicion", "cumple": false, "evidencia": "" }
+  ]
+}
