@@ -63,6 +63,7 @@ app.innerHTML = `
         <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">Bugs</span><h3 id="metric-total-bugs">0</h3></div></div></div>
         <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">Corregidos</span><h3 id="metric-corregidos">0</h3></div></div></div>
         <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">Pendientes</span><h3 id="metric-pendientes">0</h3></div></div></div>
+        <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">En revision</span><h3 id="metric-en-revision">0</h3></div></div></div>
         <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">Mejoras</span><h3 id="metric-mejoras">0</h3></div></div></div>
         <div class="col-6 col-lg"><div class="card card-soft"><div class="card-body"><span class="text-muted">Coevaluaciones</span><h3 id="metric-coevaluaciones">0</h3></div></div></div>
       </div>
@@ -91,6 +92,7 @@ app.innerHTML = `
                       <option value="">Selecciona...</option>
                       <option>Funcionalidad</option>
                       <option>Validacion</option>
+                      <option>QA</option>
                       <option>JSON Server</option>
                       <option>Usabilidad</option>
                       <option>Accesibilidad</option>

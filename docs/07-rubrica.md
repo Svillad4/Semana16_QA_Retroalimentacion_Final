@@ -1,5 +1,7 @@
 # 07 - Rubrica de evaluacion
 
+Este documento sirve para revisar si el trabajo final cumple con los requisitos de la actividad.
+
 | Criterio | Superior | Alto | Basico | Bajo |
 |---|---|---|---|---|
 | Diagnostico tecnico | Identifica errores reales en varias areas y los explica con claridad. | Identifica errores relevantes, aunque puede profundizar mas. | Identifica pocos errores o de forma general. | No diagnostica errores de manera clara. |

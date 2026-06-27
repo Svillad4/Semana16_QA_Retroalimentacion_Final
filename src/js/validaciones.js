@@ -2,6 +2,12 @@ export function limpiarTexto(value) {
   return String(value || '').trim();
 }
 
+function esRutaEvidenciaValida(value) {
+  const texto = limpiarTexto(value);
+  if (!texto) return false;
+  return /^evidencias\/[a-z0-9._/-]+\.(png|jpg|jpeg|webp|pdf)$/i.test(texto);
+}
+
 export function validarBug(formData) {
   const errores = [];
 
@@ -21,10 +27,9 @@ export function validarBug(formData) {
     errores.push('Explica la correccion aplicada o propuesta.');
   }
 
-  // TODO ESTUDIANTE:
-  // Mejora esta validacion para exigir una ruta de evidencia real.
-  // Ejemplo esperado: evidencias/antes/bug-004.png
-  // Este punto hace parte de la actividad de QA final.
+  if (!esRutaEvidenciaValida(formData.evidencia)) {
+    errores.push('Adjunta una ruta de evidencia valida, por ejemplo evidencias/antes/bug-001.png.');
+  }
 
   return errores;
 }

@@ -4,9 +4,9 @@ Completa esta tabla con los errores encontrados durante la revision QA del proye
 
 | ID | Error encontrado | Area | Prioridad | Evidencia antes | Correccion aplicada | Archivo modificado | Estado |
 |---|---|---|---|---|---|---|---|
-| BUG-001 | | | Alta / Media / Baja | | | | Pendiente / Corregido |
-| BUG-002 | | | Alta / Media / Baja | | | | Pendiente / Corregido |
-| BUG-003 | | | Alta / Media / Baja | | | | Pendiente / Corregido |
+| BUG-001 | El sistema no validaba bien la ruta de evidencia al registrar un bug. | Validacion | Alta | | Se mejoro la validacion para exigir una ruta de evidencia valida antes de guardar el registro. | src/js/validaciones.js | Corregido |
+| BUG-002 | El boton de eliminar borraba un bug sin pedir confirmacion. | Usabilidad | Media | | Se agrego una alerta de confirmacion con SweetAlert2 antes de eliminar. | src/js/qa.js | Corregido |
+| BUG-003 | El dashboard no mostraba una metrica clara para bugs en revision. | QA | Media | | Se agrego una nueva metrica y la categoria QA en el formulario para mejorar el seguimiento. | src/js/dashboard.js, src/js/app.js | Corregido |
 
 ## Como definir la prioridad
 
@@ -18,4 +18,4 @@ Completa esta tabla con los errores encontrados durante la revision QA del proye
 
 Escribe que bug fue mas importante y por que:
 
-> 
+> El bug mas importante fue el de eliminacion sin confirmacion, porque podia causar perdidas accidentales de informacion y afectar la experiencia del usuario. La mejora hizo el sistema mas seguro y claro.

@@ -6,10 +6,12 @@ export function renderDashboard(bugs = [], mejoras = [], coevaluaciones = []) {
   const total = bugs.length;
   const corregidos = bugs.filter((bug) => bug.estado === 'Corregido').length;
   const pendientes = bugs.filter((bug) => bug.estado !== 'Corregido').length;
+  const enRevision = bugs.filter((bug) => bug.estado === 'En revision').length;
 
   document.getElementById('metric-total-bugs').textContent = total;
   document.getElementById('metric-corregidos').textContent = corregidos;
   document.getElementById('metric-pendientes').textContent = pendientes;
+  document.getElementById('metric-en-revision').textContent = enRevision;
   document.getElementById('metric-mejoras').textContent = mejoras.length;
   document.getElementById('metric-coevaluaciones').textContent = coevaluaciones.length;
 

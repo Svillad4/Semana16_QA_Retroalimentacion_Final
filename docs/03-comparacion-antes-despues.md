@@ -4,8 +4,8 @@ Usa este documento para demostrar que aplicaste correcciones reales. Debes inclu
 
 | Correccion | Antes | Despues | Archivo modificado | Por que mejora el proyecto? |
 |---|---|---|---|---|
-| | evidencias/antes/... | evidencias/despues/... | | |
-| | evidencias/antes/... | evidencias/despues/... | | |
+| Validacion de evidencia | | | src/js/validaciones.js | Antes el formulario aceptaba rutas de evidencia invalidas. Ahora exige una ruta mas clara y real, lo que mejora la calidad del registro. |
+| Confirmacion al eliminar bugs | | | src/js/qa.js | Antes se podia borrar un bug sin aviso. Ahora aparece una alerta de confirmacion, lo que evita errores de usuario. |
 
 ## Ejemplo de buena justificacion
 

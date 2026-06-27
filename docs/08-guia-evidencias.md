@@ -16,6 +16,6 @@ Las evidencias son capturas o archivos que demuestran que realizaste pruebas y c
 
 ## Consejos
 
-- Usa nombres claros: `bug-001-antes.png`, `bug-001-despues.png`.
+- Usa nombres claros como bug-001-antes.png y bug-001-despues.png.
 - No dejes capturas sueltas fuera de las carpetas.
 - Cada evidencia debe coincidir con lo escrito en los documentos.

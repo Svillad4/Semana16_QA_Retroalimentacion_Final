@@ -196,9 +196,17 @@ export function bindEvents() {
       }
 
       if (action === 'delete') {
-        // TODO ESTUDIANTE:
-        // Mejora este punto agregando una confirmacion con SweetAlert2 antes de eliminar.
-        // Pista: usa Swal.fire({ title: 'Confirmar...', showCancelButton: true })
+        const result = await Swal.fire({
+          title: 'Confirmar eliminacion',
+          text: 'Esta accion quitara el bug del listado. ¿Deseas continuar?',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonText: 'Si, eliminar',
+          cancelButtonText: 'Cancelar',
+        });
+
+        if (!result.isConfirmed) return;
+
         await deleteBug(id);
         await loadData();
         showSuccess('Bug eliminado');

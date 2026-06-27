@@ -86,3 +86,13 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 576px) {
+  .card-soft {
+    border-radius: 1rem;
+  }
+
+  .table-responsive {
+    font-size: .9rem;
+  }
+}
